@@ -1,0 +1,242 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
+	<TITLE>Autoridad Certificadora para la materia Seguridad Inform&aacute;tica</TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice.org 2.0  (Win32)">
+	<META NAME="CREATED" CONTENT="20060104;12461400">
+	<META NAME="CHANGED" CONTENT="20081113;13262651">
+	<META NAME="ProgId" CONTENT="FrontPage.Editor.Document">
+	<META HTTP-EQUIV="Content-Language" CONTENT="es">
+<SCRIPT LANGUAGE="JavaScript"> 
+
+function getCookie(c_name) {
+		if (document.cookie.length>0) {
+			 c_start=document.cookie.indexOf(c_name + "=")
+			 if (c_start!=-1) {
+    		c_start=c_start + c_name.length+1 
+    		c_end=document.cookie.indexOf(";",c_start)
+    		if (c_end==-1) c_end=document.cookie.length
+    				return unescape(document.cookie.substring(c_start,c_end))
+      } 
+  		}
+		return ""
+}
+	
+function setCookie(c_name,value,expiredays) {
+		var exdate=new Date()
+		exdate.setDate(exdate.getDate()+expiredays)
+		document.cookie=c_name+ "=" + escape(value) + ((expiredays==null) ? "" : "; expires="+exdate.toGMTString())
+}
+		
+function checkCookie() {
+		var todaysdate = new Date()
+		var day = todaysdate.getDay()
+		
+		switch (day) {
+			 case 1:
+					 day = "Monday"
+					 break
+			 case 2:
+					 day = "Tuesday"
+					 break
+			 case 3:
+					 day = "Wednesday"
+					 break
+			 case 4:
+					 day = "Thursday"
+					 break
+			 case 5:
+					 day = "Friday"
+					 break
+			 case 6:
+					 day = "Saturday"
+					 break
+			 case 0:
+					 day = "Sunday"
+					 break
+		}
+		
+  var lafecha = getCookie('fecha')
+		
+		if (lafecha != null && lafecha != "") {
+			 if (day == lafecha) {
+			 } else {
+				  alert('Recordamos que este servicio de certificación es sólo para alumnos de Seguridad Informática de la USC')
+			 }
+		} else {
+ 			lafecha = day
+
+ 			if (lafecha!=null && lafecha!="") {
+    		setCookie('fecha', lafecha, 365)
+    		alert('ADVERTENCIA: Este servicio de certificación está restringido a los alumnos de Seguridad Informática de la USC')
+    }
+  }
+}
+
+// Multiple onload function created by: Simon Willison
+// http://simonwillison.net/2004/May/26/addLoadEvent/
+function addLoadEvent(func) {
+  var oldonload = window.onload;
+  if (typeof window.onload != 'function') {
+    window.onload = func;
+  } else {
+    window.onload = function() {
+      if (oldonload) {
+        oldonload();
+      }
+      func();
+    }
+  }
+}
+
+addLoadEvent(function() {
+  checkCookie();
+});
+
+  </SCRIPT> 
+
+</HEAD>
+<BODY LANG="es-ES" BGCOLOR="#ffffcc" DIR="LTR">
+<H1 ALIGN=CENTER>CA-SegI</H1>
+<H2 ALIGN=CENTER><FONT SIZE=5 STYLE="font-size: 20pt">Autoridad
+Certificadora para la materia Seguridad Inform&aacute;tica</FONT></H2>
+<P ALIGN=JUSTIFY><FONT SIZE=3 STYLE="font-size: 13pt">Esta autoridad
+certficadora ha sido desarrollada para unas pr&aacute;cticas de la
+materia Seguridad Inform&aacute;tica de la USC. No tiene ninguna
+validez legal. Si no es un alumno de esta materia, por favor no
+emplee este servicio.</FONT></P>
+<P ALIGN=JUSTIFY><FONT SIZE=3 STYLE="font-size: 13pt">Para emplear
+los certificados emitidos por esta CA deber&aacute; en primer lugar
+instalar el certificado ra&iacute;z de la misma en su navegador,
+gestor de correo o programa en el que vaya a utilizar dichos
+certificados.</FONT></P>
+<P ALIGN=JUSTIFY><FONT SIZE=3 STYLE="font-size: 13pt"><B>Certificado
+ra&iacute;z de esta CA en formato PEM</B>: </FONT><A HREF="http://www-gsi.dec.usc.es/~puri/demoCA/cacert.pem"><FONT SIZE=3 STYLE="font-size: 13pt">certificado</FONT></A></P>
+<P><FONT SIZE=3 STYLE="font-size: 13pt"><I><B>Instrucciones para
+instalarlo en Internet Explorer: </B><FONT COLOR="#b84747">Herramientas
+-&gt; Opciones de internet -&gt; Contenido -&gt; Certificados -&gt;
+Entidades emisoras ra&iacute;z de confianza -&gt;
+Importar...</FONT></I><BR><I><B>Instrucciones para instalarlo en
+Firefox:</B> <FONT COLOR="#b84747">Herramientas -&gt; Opciones -&gt;
+Avanzado -&gt; Cifrado -&gt; Ver certificados -&gt; Autoridades -&gt;
+Importar ... &oacute; Editar -&gt; Preferencias -&gt; Avanzado -&gt;
+Cifrado -&gt; Ver certificados -&gt; Autoridades -&gt; Importar ...
+</FONT></I><BR><I><B>Instrucciones para instalarlo en Thunderbird:
+</B><FONT COLOR="#b84747">Herramientas -&gt; Opciones -&gt;
+Privacidad -&gt; Seguridad -&gt; Administrar certificados... -&gt;
+Autoridades -&gt; Importar ...</FONT><BR></I></FONT><BR><BR>
+</P>
+<P><FONT SIZE=3 STYLE="font-size: 13pt">El segundo paso ser&aacute;
+crear una solicitud de certificado seg&uacute;n las instrucciones recibidas y enviarla a la CA para que la
+firme y nos devuelva el certificado. <BR>En el
+plazo m&aacute;s breve posible la CA firmar&aacute; dicho certificado
+y &eacute;ste se publicar&aacute; en esta p&aacute;gina web (ver
+lista a continuaci&oacute;n) para que tanto su propietario como
+cualquier otra persona lo pueda descargar.</FONT></P>
+<P><BR><BR>
+</P>
+<DL>
+	<DL>
+		<DL>
+			<DD>
+			<TABLE WIDTH=620 BORDER=1 CELLPADDING=4 CELLSPACING=3>
+				<COL WIDTH=298>
+				<COL WIDTH=295>
+				<THEAD>
+					<TR>
+						<TH COLSPAN=2 WIDTH=604 VALIGN=BOTTOM BGCOLOR="#b84747">
+							<P><FONT COLOR="#ffffff"><FONT FACE="Arial, sans-serif"><FONT SIZE=3>Lista
+							de certificados de usuario</FONT></FONT></FONT></P>
+						</TH>
+					</TR>
+				</THEAD>
+				<TBODY>
+					<TR>
+						<TD WIDTH=298 BGCOLOR="#ffffff">
+							
+						</TD>
+						<TD WIDTH=295 BGCOLOR="#ffffff">
+							
+						</TD>
+					</TR>
+					<TR>
+						<TD WIDTH=298 BGCOLOR="#ffffff">
+							
+						</TD>
+						<TD WIDTH=295 BGCOLOR="#ffffff">
+							
+						</TD>
+					</TR>
+					<TR>
+						<TD WIDTH=298 BGCOLOR="#ffffff">
+							
+						</TD>
+						<TD WIDTH=295 BGCOLOR="#ffffff">
+							
+						</TD>
+					</TR>
+					<TR>
+						<TD WIDTH=298 BGCOLOR="#ffffff">
+							
+						</TD>
+						<TD WIDTH=295 BGCOLOR="#ffffff">
+							
+						</TD>
+					</TR>
+					<TR>
+						<TD WIDTH=298 BGCOLOR="#ffffff">
+							
+						</TD>
+						<TD WIDTH=295 BGCOLOR="#ffffff">
+							
+						</TD>
+					</TR>
+					<TR>
+						<TD WIDTH=298 BGCOLOR="#ffffff">
+							
+							</TD>
+						<TD WIDTH=295 BGCOLOR="#ffffff">
+							
+						</TD>
+					</TR>
+					<TR>
+						<TD WIDTH=298 BGCOLOR="#ffffff">
+							
+							
+						</TD>
+						<TD WIDTH=295 BGCOLOR="#ffffff">
+							
+							
+						</TD>
+					</TR>
+					<TR>
+						<TD WIDTH=298 BGCOLOR="#ffffff">
+							</TD>
+						<TD WIDTH=295 BGCOLOR="#ffffff">
+							
+						</TD>
+					</TR>
+					<TR>
+						<TD WIDTH=298 BGCOLOR="#ffffff">
+					
+						</TD>
+						<TD WIDTH=295 BGCOLOR="#ffffff">
+					
+						</TD>
+					</TR>
+					<TR>
+						<TD WIDTH=298 BGCOLOR="#ffffff">
+											</TD>
+						<TD WIDTH=295 BGCOLOR="#ffffff">
+					
+						</TD>
+					</TR>
+				</TBODY>
+			</TABLE>
+		</DL>
+	</DL>
+</DL>
+
+</BODY>
+</HTML>
