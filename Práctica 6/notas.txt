@@ -1,0 +1,31 @@
+Ejercicio 1.2: Mostrad la información del par de claves obtenido anteriormente. Explicad qué representan los campos modulus, publicExponent, privateExponent, prime1, prime2. ¿Estarían almacenadas de forma segura en el fichero claves1.pem?
+
+NO, se puede acceder a todo, ya que se guarda en el fichero todo: clave publica, clave privada.
+
+Cuando añadimos una opcion de cifrado, nos pregunta una clave y así genera las claves cifradas.
+
+1.3:
+pubout solo sale la parte publica
+
+1.4:
+
+No solo es mas seguro, sino que es más comodo
+
+Si utilizamos -text -noout hay que añadir una opcion para indicar que es de clave publica, -pubin
+
+Ejercicio 2:
+
+Ejercicio 2.1: Cifrad un texto pequeño usando una de las claves públicas generadas en el apartado anterior. Descifradlo a continuación. 
+
+Ciframos utilizando una clave publica.
+
+Ejercicio 2.2: Tratad de cifrar un fichero grande. ¿Qué ocurre? ¿Por qué?
+
+Nos va a dar un error, diciendo que los datos son demasiado grandes. Cuando ciframos con RSA, como estamos cifrando con algo de un modulo, no podemos cifrar archivos grandes. PAra esto ya tenemos algorimos cifrados.
+
+3
+
+Para hacer lo de la firma: calculamos el resumen del documento (a mano, con uno de los algoritmos que utilizamos) y lo firmamos.
+
+Se usa la clave privada para firmar, porque garantiza la autenticacion.
+
